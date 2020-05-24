@@ -64,6 +64,7 @@ async def on_message(message):
     elif command == "업뎃":
         em = discord.Embed(title="용용봇 1.1 업데이트", colour=0x000000)
         em.set_author(name="용용봇 패치 내역")
+        em.add_field(name="용용봇 호스팅", value="용용봇이 github서버 컴퓨터에 맡겨졌습니다. 앞으로는 24시간 내내 갈궈질겁니다",inline=False)
         em.add_field(name="저작권 관련 문제", value="디스코드 봇의 프로필에 이용된 그림이 저작권 문제로 인하여 일시적으로 내려갔습니다",inline=False)
         await client.send_message(message.channel, embed=em)
 
